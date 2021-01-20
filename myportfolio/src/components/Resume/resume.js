@@ -75,9 +75,9 @@ const Resume = () => {
           <TimelineDot />
         </TimelineSeparator>
         <TimelineContent>
-        <h4 style={{ marginTop: "0%"}}>Physical Therapy Technician - Chandler Physical Therapy</h4><p style={{ fontSize: "12px"}}>2020-present</p>
+        <h4 style={{ marginTop: "0%"}}>Assistant Manager - Crust Italian Restaurant</h4><p style={{ fontSize: "12px"}}>2017-2018</p>
             <p>
-            Responsible for assisting physical therapists with non-clinical tasks while caring for individuals.
+            Primarily acted as a server and bartender with responsibilities associated with being an assistant manager.  
             </p>
         </TimelineContent>
       </TimelineItem>
@@ -107,9 +107,9 @@ const Resume = () => {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-        <h4 style={{ marginTop: "0%"}}>Physical Therapy Technician - Chandler Physical Therapy</h4><p style={{ fontSize: "12px"}}>2020-present</p>
+        <h4 style={{ marginTop: "0%"}}>Northern Arizona University, BS Exercise Science</h4><p style={{ fontSize: "12px"}}>2010-2014</p>
             <p>
-            Responsible for assisting physical therapists with non-clinical tasks while caring for individuals.
+            Received Bachelor's of Science in Exercise Science with a minor in Chemistry.  Graduated with a 3.4 GPA.
             </p>
         </TimelineContent>
       </TimelineItem>
@@ -118,9 +118,8 @@ const Resume = () => {
           <TimelineDot />
         </TimelineSeparator>
         <TimelineContent>
-        <h4 style={{ marginTop: "0%"}}>Physical Therapy Technician - Chandler Physical Therapy</h4><p style={{ fontSize: "12px"}}>2020-present</p>
+        <h4 style={{ marginTop: "0%"}}>Albuquerque Academy</h4><p style={{ fontSize: "12px"}}>2003-2010</p>
             <p>
-            Responsible for assisting physical therapists with non-clinical tasks while caring for individuals.
             </p>
         </TimelineContent>
       </TimelineItem>

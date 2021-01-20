@@ -14,7 +14,7 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import ContactMail from "@material-ui/icons/ContactMail";
+// import ContactMail from "@material-ui/icons/ContactMail";
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import ListRoundedIcon from '@material-ui/icons/ListRounded';
 import FolderRoundedIcon from '@material-ui/icons/FolderRounded';
@@ -94,7 +94,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(0, 1),
     color: "black",
     fontWeight: "bold",
-    marginLeft: "70%",
+    marginLeft: "75%",
   }
 }));
 
@@ -114,11 +114,11 @@ const menuItems = [
     listText: "Projects",
     href: "/projects"
   },
-  {
-    listIcon: <ContactMail />,
-    listText: "Contact Me",
-    href: "/contact"
-  },
+  // {
+  //   listIcon: <ContactMail />,
+  //   listText: "Contact Me",
+  //   href: "/contact"
+  // },
 ];
 
 export default function Navbar() {
@@ -172,9 +172,7 @@ export default function Navbar() {
             className={classes.navigationAbout}
             component="button"
             color="inherit"
-            onClick={() => {
-              console.info("I'm a button.");
-            }}
+            onClick={handleDrawerClose}
           >
             ABOUT ME
           </Button>
@@ -183,9 +181,7 @@ export default function Navbar() {
             className={classes.navigationLinks}
             component="button"
             color="inherit"
-            onClick={() => {
-              console.info("I'm a button.");
-            }}
+            onClick={handleDrawerClose}
           >
             RESUME
           </Button>
@@ -194,23 +190,19 @@ export default function Navbar() {
             className={classes.navigationLinks}
             component="button"
             color="inherit"
-            onClick={() => {
-              console.info("I'm a button.");
-            }}
+            onClick={handleDrawerClose}
           >
             PROJECTS
           </Button>
-          <Button
+          {/* <Button
             href="/contact"
             className={classes.navigationLinks}
             component="button"
             color="inherit"
-            onClick={() => {
-              console.info("I'm a button.");
-            }}
+            onClick={handleDrawerClose}
           >
             CONTACT ME
-          </Button>
+          </Button> */}
           </Hidden>
         </Toolbar>
       </AppBar>
@@ -242,9 +234,7 @@ export default function Navbar() {
         <List>
           {menuItems.map((menuItem, key) => (
             <Link to={menuItem.href} color="inherit" className={`${classes.menuItem} drawerButton`} key={key}>
-            <ListItem button  onClick={() => {
-              console.info("I'm a button.");
-            }}>
+            <ListItem button  onClick={handleDrawerClose}>
               <ListItemIcon className={classes.menuItem}>
                 {menuItem.listIcon}
               </ListItemIcon>

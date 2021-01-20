@@ -10,6 +10,26 @@ body {
   
 }
 
+#dilla {
+  float: left;
+  max-width: 40%;
+  height: auto;
+  padding: 15px; 
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: black;
+  font-size: 5em;
+  padding: 18px;
+}
+
 .avatar-img {
   height: 5000px;
 }
