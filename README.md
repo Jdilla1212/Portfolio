@@ -1,4 +1,4 @@
-# Manageer ERP
+# React Portfolio Website
 
 ![License badge](https://img.shields.io/badge/license-MIT-green)
 
