@@ -12,7 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import manageerPic from '../../assets/images/manageer.png';
 import budgetPic from '../../assets/images/budget.png';
 import fitnessPic from '../../assets/images/fitness.png';
-import burgerPic from '../../assets/images/burger.png';
+import onboardPic from '../../assets/images/onboard.png';
 import bookApp from '../../assets/images/bookApp.png';
 import portfolioPic from '../../assets/images/portfolio.png';
 
@@ -41,6 +41,33 @@ const Projects = () => {
       <Grid container spacing={2}>
         <Grid item sm={12}>
           <Paper className={classes.header}><Typed strings={["Projects"]} typeSpeed={40} /></Paper>
+        </Grid>
+        <Grid item xs={12} sm={12} md={4}>
+        <Card style={{margin: "auto"}}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image={onboardPic}
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            OnBoard
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Any company looking to efficiently onboard a new employee needs to look no further than the 'OnBoard' app.  This app has two separate log-ins for employees and administrators.  Admins can assign tasks and create new users (employees) and employees can use the site to view/complete their tasks.  Features include file upload, video viewing, agreement acknowledgments and more!
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+      <Button href="https://onboard-proj.herokuapp.com/" size="small" color="primary">
+          Link to deployed version
+        </Button>
+        <Button href="https://github.com/poserposer13/OnBoard" size="small" color="primary">
+          Link to GitHub repo
+        </Button>
+      </CardActions>
+    </Card>
         </Grid>
         <Grid item xs={12} sm={12} md={4}>
         <Card style={{margin: "auto"}}>
@@ -123,33 +150,7 @@ const Projects = () => {
       </CardActions>
     </Card>
         </Grid>
-        <Grid item xs={12} sm={12} md={4}>
-        <Card style={{margin: "auto"}}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={burgerPic}
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Burger Devourer
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-          A tasty app that lets you create and devour burgers! The app uses Node, MySQl, express and handlebars. MySQL to create the database of burgers on the back-end, node for the CLI and querying through the database, and handlebars to render HTML to the front-end
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-      <Button href="https://mighty-river-38472.herokuapp.com/" size="small" color="primary">
-          Link to deployed version
-        </Button>
-        <Button href="https://github.com/Jdilla1212/Burger-devourer" size="small" color="primary">
-          Link to GitHub repo
-        </Button>
-      </CardActions>
-    </Card>
-        </Grid>
+        
         <Grid item xs={12} sm={12} md={4}>
         <Card style={{margin: "auto"}}>
       <CardActionArea>
