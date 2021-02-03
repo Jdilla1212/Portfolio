@@ -44,7 +44,8 @@ const Projects = () => {
         </Grid>
         <Grid item xs={12} sm={12} md={4}>
         <Card style={{margin: "auto"}}>
-      <CardActionArea>
+      <CardActionArea
+      href="https://onboard-proj.herokuapp.com/">
         <CardMedia
           className={classes.media}
           image={onboardPic}
@@ -71,7 +72,8 @@ const Projects = () => {
         </Grid>
         <Grid item xs={12} sm={12} md={4}>
         <Card style={{margin: "auto"}}>
-      <CardActionArea>
+      <CardActionArea
+      href="https://polar-dawn-89598.herokuapp.com/">
         <CardMedia
           className={classes.media}
           image={manageerPic}
@@ -98,7 +100,8 @@ const Projects = () => {
         </Grid>
         <Grid item xs={12} sm={12} md={4}>
         <Card style={{margin: "auto"}}>
-      <CardActionArea>
+      <CardActionArea
+      href="https://powerful-sands-86074.herokuapp.com/">
         <CardMedia
           className={classes.media}
           image={budgetPic}
@@ -114,10 +117,10 @@ const Projects = () => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-      <Button href="https://polar-dawn-89598.herokuapp.com/" size="small" color="primary">
+      <Button href="https://powerful-sands-86074.herokuapp.com/" size="small" color="primary">
           Link to deployed version
         </Button>
-        <Button href="https://powerful-sands-86074.herokuapp.com/" size="small" color="primary">
+        <Button href="https://github.com/Jdilla1212/Budget-Tracker" size="small" color="primary">
           Link to GitHub repo
         </Button>
       </CardActions>
@@ -125,7 +128,8 @@ const Projects = () => {
         </Grid>
         <Grid item xs={12} sm={12} md={4}>
         <Card style={{margin: "auto"}}>
-      <CardActionArea>
+      <CardActionArea
+      href="https://polar-bastion-88499.herokuapp.com/?id=5fd685d634bc0000176cbfe6">
         <CardMedia
           className={classes.media}
           image={fitnessPic}
@@ -153,7 +157,8 @@ const Projects = () => {
         
         <Grid item xs={12} sm={12} md={4}>
         <Card style={{margin: "auto"}}>
-      <CardActionArea>
+      <CardActionArea
+      href="https://book-app-jdilla.herokuapp.com/">
         <CardMedia
           className={classes.media}
           image={bookApp}
@@ -180,7 +185,8 @@ const Projects = () => {
         </Grid>
         <Grid item xs={12} sm={12} md={4}>
         <Card style={{margin: "auto"}}>
-      <CardActionArea>
+      <CardActionArea
+      href="https://jdillaportfolio.netlify.app/">
         <CardMedia
           className={classes.media}
           image={portfolioPic}
@@ -196,7 +202,7 @@ const Projects = () => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-      <Button href="https://polar-dawn-89598.herokuapp.com/" size="small" color="primary">
+      <Button href="https://jdillaportfolio.netlify.app/" size="small" color="primary">
           Link to deployed version
         </Button>
         <Button href="https://github.com/Jdilla1212/Portfolio" size="small" color="primary">
