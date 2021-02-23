@@ -62,7 +62,7 @@ const Contact = () => {
             <br />
             <br />
             Email: 
-            <a href="mailto:jdp237@nau.edu" target="_top" style={{color:'black'}}>jdp237@nau.edu</a>
+            <a href="mailto:jdp237@nau.edu" target="_top" style={{color:'black'}}>&nbsp;jdp237@nau.edu</a>
             <br />
             <br />
           </h3>
