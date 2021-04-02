@@ -85,6 +85,8 @@ const useStyles = makeStyles((theme) => ({
     justify: "flex-end",
     padding: theme.spacing(0, 1),
     color: "black",
+    fontFamily: 'Open Sans, sans-serif',
+    // fontStyle: "italic",
     fontWeight: "bold",
     marginLeft: "1%",
   },
@@ -93,8 +95,10 @@ const useStyles = makeStyles((theme) => ({
     justify: "flex-end",
     padding: theme.spacing(0, 1),
     color: "black",
+    fontFamily: 'Open Sans, sans-serif',
+    // fontStyle: "italic",
     fontWeight: "bold",
-    marginLeft: "70%",
+    marginLeft: "71%",
   }
 }));
 
@@ -156,7 +160,7 @@ export default function Navbar() {
             <FilterListRoundedIcon />
           </IconButton>  
           <Button
-            style={{ fontSize: "20px" }}
+            style={{ fontSize: "20px", fontFamily: 'Open Sans, sans-serif' }}
             href="/"
             component="button"
             color="inherit"
@@ -164,7 +168,7 @@ export default function Navbar() {
               console.info("I'm a button.");
             }}
           >
-            MY PORTFOLIO
+            Josh Padilla
           </Button>
           <Hidden smDown>
           <Button

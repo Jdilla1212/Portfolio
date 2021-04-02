@@ -41,7 +41,7 @@ const Home = () => {
           justify="center"
           alignItems="center"
         >
-          <Typography className={classes.title} variant="h4">
+          <Typography className={classes.title} variant="h4" style={{ fontFamily: 'Open Sans, sans-serif' }}>
             <Typed strings={["Josh Padilla"]} typeSpeed={40} />
           </Typography>
         </Grid>
@@ -50,7 +50,7 @@ const Home = () => {
           justify="center"
           alignItems="center"
         >
-          <Typography variant="h5" style={{ color: "#66666" }}>
+          <Typography variant="h5" style={{ color: "#66666", fontFamily: 'Open Sans, sans-serif' }}>
             <Typed
               strings={[
                 "Full Stack Web Developer",
