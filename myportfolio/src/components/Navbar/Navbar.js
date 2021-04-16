@@ -19,7 +19,7 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 import ListRoundedIcon from '@material-ui/icons/ListRounded';
 import FolderRoundedIcon from '@material-ui/icons/FolderRounded';
 import Avatar from "@material-ui/core/Avatar";
-import avatar from "../../assets/images/avatar.png";
+import avatar from "../../assets/images/JP-Logo.png";
 import { Link } from "react-router-dom";
 import Hidden from '@material-ui/core/Hidden';
 
@@ -168,6 +168,12 @@ export default function Navbar() {
               console.info("I'm a button.");
             }}
           >
+              <img
+            className={classes.avatar}
+            src={avatar}
+            alt="Josh Padilla"
+            style={{ height: "3.5rem", marginRight: "15px" }}
+          />
             Josh Padilla
           </Button>
           <Hidden smDown>
@@ -220,11 +226,11 @@ export default function Navbar() {
         }}
       >
         <div className={classes.drawerHeader}>
-          <Avatar
+          <img
             className={classes.avatar}
             src={avatar}
             alt="Josh Padilla"
-            style={{ margin: "auto" }}
+            style={{ height: "2.5rem", margin:"auto", marginLeft: "1rem" }}
           />
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
