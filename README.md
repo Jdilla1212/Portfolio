@@ -4,7 +4,7 @@
 
 [For deployed version, click me](https://jdillaportfolio.netlify.app/)
 
-![Image of DEMO application](https://github.com/Jdilla1212/Portfolio/blob/master/myportfolio/src/assets/images/portfolio.png) 
+![Image of DEMO application](https://github.com/Jdilla1212/E-Commerce/blob/main/src/assets/site-sample-2.PNG) 
 
 <br>
 

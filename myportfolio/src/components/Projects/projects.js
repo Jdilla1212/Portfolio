@@ -13,7 +13,7 @@ import manageerPic from '../../assets/images/manageer.png';
 import budgetPic from '../../assets/images/budget.png';
 import fitnessPic from '../../assets/images/fitness.png';
 import onboardPic from '../../assets/images/onboard.png';
-import bookApp from '../../assets/images/bookApp.png';
+import bookApp from '../../assets/images/ecommerce.PNG';
 import portfolioPic from '../../assets/images/portfolio.png';
 
 const useStyles = makeStyles((theme) => ({
@@ -65,6 +65,34 @@ const Projects = () => {
           Link to deployed version
         </Button>
         <Button href="https://github.com/poserposer13/OnBoard" size="small" color="primary">
+          Link to GitHub repo
+        </Button>
+      </CardActions>
+    </Card>
+        </Grid>
+        <Grid item xs={12} sm={12} md={4}>
+        <Card style={{margin: "auto"}}>
+      <CardActionArea
+      href="https://papadillasshop.netlify.app/">
+        <CardMedia
+          className={classes.media}
+          image={bookApp}
+          title="Papadilla ecommerce"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Papadilla's Ecommerce Shop
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+          This is a sample ecommerce website built using commerce.js and stripe.  Built entirely with React.js and styled with Material-UI.  Commerce.js handles the products on the back end and stripe handles the payments!
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+      <Button href="https://papadillasshop.netlify.app/" size="small" color="primary">
+          Link to deployed version
+        </Button>
+        <Button href="https://github.com/Jdilla1212/E-Commerce" size="small" color="primary">
           Link to GitHub repo
         </Button>
       </CardActions>
@@ -155,34 +183,6 @@ const Projects = () => {
     </Card>
         </Grid>
         
-        <Grid item xs={12} sm={12} md={4}>
-        <Card style={{margin: "auto"}}>
-      <CardActionArea
-      href="https://book-app-jdilla.herokuapp.com/">
-        <CardMedia
-          className={classes.media}
-          image={bookApp}
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            React Reading List
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            An app that allows to keep track of the books you want to read, as well as add new ones!  Add the book title, author, and a short synopsis so you can remember all the books you need to get caught up on!  This app uses the ReactJS framework for the front-end and express and mongoose for the back-end.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-      <Button href="https://book-app-jdilla.herokuapp.com/" size="small" color="primary">
-          Link to deployed version
-        </Button>
-        <Button href="https://github.com/Jdilla1212/book-app" size="small" color="primary">
-          Link to GitHub repo
-        </Button>
-      </CardActions>
-    </Card>
-        </Grid>
         <Grid item xs={12} sm={12} md={4}>
         <Card style={{margin: "auto"}}>
       <CardActionArea
