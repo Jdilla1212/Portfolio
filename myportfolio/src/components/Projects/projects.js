@@ -13,7 +13,7 @@ import manageerPic from '../../assets/images/manageer.png';
 import budgetPic from '../../assets/images/budget.png';
 import fitnessPic from '../../assets/images/fitness.png';
 import onboardPic from '../../assets/images/onboard.png';
-import bookApp from '../../assets/images/ecommerce.PNG';
+import bookApp from '../../assets/images/ecommerce.png';
 import portfolioPic from '../../assets/images/portfolio.png';
 
 const useStyles = makeStyles((theme) => ({
