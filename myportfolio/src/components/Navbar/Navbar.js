@@ -79,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 0,
   },
   navWrapper: {
-    position: 'absolute',
+    position: 'relative',
     width: "97%",
     display: "flex",
     alignItems: "flex-end",
@@ -139,7 +139,7 @@ export default function Navbar() {
         <Toolbar
           style={{ background: "linear-gradient(to right, #19547b, #d7d2cc)" }}
         >
-            <div>
+            <div style={{width: "20rem"}}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -162,7 +162,7 @@ export default function Navbar() {
             className={classes.avatar}
             src={avatar}
             alt="Josh Padilla"
-            style={{ height: "3.5rem", marginRight: "1.5em" }}
+            style={{ height: "3.5rem", marginRight: "1.5rem" }}
           />
             Josh Padilla
           </Button>
