@@ -6,14 +6,17 @@ import Typed from "react-typed";
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
-      width: "50%",
+      width: "75%",
       margin: "auto",
     },
     header: {
       padding: theme.spacing(2),
       textAlign: "center",
+      width: "75%",
+      margin: "auto",
+      marginBottom: "1em",
       backgroundColor: "transparent",
-      marginTop: "5%",
+      marginTop: "10%",
       fontSize: "35px",
     },
     contactContents: {

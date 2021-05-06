@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
       zIndex: 1
   },
   large: {
+    marginTop: "2.5em",
     width: theme.spacing(30),
     height: theme.spacing(35),
   },

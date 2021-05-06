@@ -8,24 +8,18 @@ import CertImg from "../../assets/images/cert.png";
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        width: "50%",
+        width: "75%",
         margin: "auto",
     },
     header: {
         padding: theme.spacing(2),
         textAlign: "center",
+        width: "75%",
+        margin: "auto",
+        marginBottom: "1em",
         backgroundColor: "transparent",
-        marginTop: "5%",
+        marginTop: "10%",
         fontSize: "35px",
-    },
-    container: {
-        position: "absolute",
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%, -50%)",
-        // width: "100vw",
-        textAlign: "center",
-        zIndex: 1,
     },
     cert: {
         position: "relative",

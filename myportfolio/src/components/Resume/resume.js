@@ -14,16 +14,21 @@ import SchoolIcon from '@material-ui/icons/School';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        width: "50%",
-        margin: "auto"
+        width: "75%",
+        margin: "auto",
     },
     header: {
         padding: theme.spacing(2),
         textAlign: "center",
+        width: "75%",
+        margin: "auto",
+        marginBottom: "1em",
         backgroundColor: "transparent",
-        marginTop: "5%",
-        fontSize: "35px",
-
+        marginTop: "10%",
+        fontSize: "35px", 
+    },
+    container: {
+        
     },
     resumeContents: {
         padding: theme.spacing(2),
@@ -37,10 +42,11 @@ const Resume = () => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <Grid container spacing={2}>
+            <Grid>
                 <Grid item sm={12}>
                     <Paper className={classes.header}><Typed strings={["Resume"]} typeSpeed={40} /></Paper>
                 </Grid>
+            <Grid container spacing={2}>
                 <Grid item xs={12} sm={12} md={6}>
                     <Paper className={classes.resumeContents}>
                         <BusinessCenterIcon />
@@ -52,9 +58,9 @@ const Resume = () => {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent>
-                                    <h4 style={{ marginTop: "0%" }}>Physical Therapy Technician - Chandler Physical Therapy</h4><p style={{ fontSize: "12px" }}>2020-present</p>
+                                <h4 style={{ fontSize: "1.25rem", marginTop: "0%" }}>Freelance Web Developer - Salt River Psychological Services</h4><p style={{ fontSize: "15px", marginTop: "-2%" }}>2021-present</p>
                                     <p>
-                                        Responsible for assisting physical therapists with non-clinical tasks while caring for individuals
+                                    Responsible for designing/developing a professional website that meets all of the clients wants and needs.  
             </p>
                                 </TimelineContent>
                             </TimelineItem>
@@ -64,9 +70,9 @@ const Resume = () => {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent>
-                                    <h4 style={{ marginTop: "0%" }}>Personal Trainer - Life Time Fitness</h4><p style={{ fontSize: "12px" }}>2015-2020</p>
+                                <h4 style={{ fontSize: "1.25rem", marginTop: "0%" }}>Physical Therapy Technician - Chandler Physical Therapy</h4><p style={{ fontSize: "15px", marginTop: "-2%" }}>2020-present</p>
                                     <p>
-                                        Responsible for assessing needs/wants of clients and creating health and wellness plans based on their goals
+                                        Responsible for assisting physical therapists with non-clinical tasks while caring for individuals. Improvement of company website with Wordpress
             </p>
                                 </TimelineContent>
                             </TimelineItem>
@@ -75,9 +81,9 @@ const Resume = () => {
                                     <TimelineDot />
                                 </TimelineSeparator>
                                 <TimelineContent>
-                                    <h4 style={{ marginTop: "0%" }}>Assistant Manager - Crust Italian Restaurant</h4><p style={{ fontSize: "12px" }}>2017-2018</p>
+                                    <h4 style={{ fontSize: "1.25rem", marginTop: "0%" }}>Personal Trainer - Life Time Fitness</h4><p style={{ fontSize: "15px", marginTop: "-2%" }}>2015-2020</p>
                                     <p>
-                                        Primarily acted as a server and bartender with responsibilities associated with being an assistant manager.
+                                        Responsible for assessing needs/wants of clients and creating health and wellness plans based on their goals
             </p>
                                 </TimelineContent>
                             </TimelineItem>
@@ -95,7 +101,7 @@ const Resume = () => {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent>
-                                    <h4 style={{ marginTop: "0%" }}>University of Arizona Full-Stack Web Development</h4><p style={{ fontSize: "12px" }}>August 2020 - Feb 2021</p>
+                                    <h4 style={{ fontSize: "1.25rem", marginTop: "0%" }}>University of Arizona Full-Stack Web Development</h4><p style={{ fontSize: "15px", marginTop: "-2%" }}>August 2020 - Feb 2021</p>
                                     <p>
                                         Studied Full-Stack web development languages and frameworks such as HTML, CSS, Javascript, Express, NodeJS, MySQl, MongoDB, and ReactJS
             </p>
@@ -107,7 +113,7 @@ const Resume = () => {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent>
-                                    <h4 style={{ marginTop: "0%" }}>Northern Arizona University, BS Exercise Science</h4><p style={{ fontSize: "12px" }}>2010-2014</p>
+                                    <h4 style={{ fontSize: "1.25rem", marginTop: "0%" }}>Northern Arizona University, BS Exercise Science</h4><p style={{ fontSize: "15px", marginTop: "-2%" }}>2010-2014</p>
                                     <p>
                                         Received Bachelor's of Science in Exercise Science with a minor in Chemistry.  Graduated with a 3.4 GPA.
             </p>
@@ -118,13 +124,14 @@ const Resume = () => {
                                     <TimelineDot />
                                 </TimelineSeparator>
                                 <TimelineContent>
-                                    <h4 style={{ marginTop: "0%" }}>Albuquerque Academy</h4><p style={{ fontSize: "12px" }}>2003-2010</p>
+                                    <h4 style={{ fontSize: "1.25rem", marginTop: "0%" }}>Albuquerque Academy</h4><p style={{ fontSize: "15px", marginTop: "-2%" }}>2003-2010</p>
                                     <p>
                                     </p>
                                 </TimelineContent>
                             </TimelineItem>
                         </Timeline>
                     </Paper>
+                </Grid>
                 </Grid>
             </Grid>
         </div>

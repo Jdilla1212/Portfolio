@@ -18,7 +18,6 @@ import ContactMail from "@material-ui/icons/ContactMail";
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import ListRoundedIcon from '@material-ui/icons/ListRounded';
 import FolderRoundedIcon from '@material-ui/icons/FolderRounded';
-import Avatar from "@material-ui/core/Avatar";
 import avatar from "../../assets/images/JP-Logo.png";
 import { Link } from "react-router-dom";
 import Hidden from '@material-ui/core/Hidden';
@@ -71,7 +70,6 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    // marginLeft: -drawerWidth,
   },
   contentShift: {
     transition: theme.transitions.create("margin", {
@@ -80,26 +78,19 @@ const useStyles = makeStyles((theme) => ({
     }),
     marginLeft: 0,
   },
-  navigationLinks: {
+  navWrapper: {
+    position: 'absolute',
+    width: "97%",
     display: "flex",
-    justify: "flex-end",
-    padding: theme.spacing(0, 1),
-    color: "black",
-    fontFamily: 'Open Sans, sans-serif',
-    // fontStyle: "italic",
-    fontWeight: "bold",
-    marginLeft: "1%",
+    alignItems: "flex-end",
+    justifyContent: "flex-end",
   },
-  navigationAbout: {
-    display: "flex",
-    justify: "flex-end",
-    padding: theme.spacing(0, 1),
+  navigationLinks: {
+    padding: theme.spacing(0, 3),
     color: "black",
     fontFamily: 'Open Sans, sans-serif',
-    // fontStyle: "italic",
     fontWeight: "bold",
-    marginLeft: "71%",
-  }
+  },
 }));
 
 const menuItems = [
@@ -140,9 +131,7 @@ export default function Navbar() {
 
   return (
     <div className={classes.root}>
-      {/* <CssBaseline /> */}
       <AppBar
-        position="fixed"
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
@@ -150,6 +139,7 @@ export default function Navbar() {
         <Toolbar
           style={{ background: "linear-gradient(to right, #19547b, #d7d2cc)" }}
         >
+            <div>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -172,14 +162,16 @@ export default function Navbar() {
             className={classes.avatar}
             src={avatar}
             alt="Josh Padilla"
-            style={{ height: "3.5rem", marginRight: "15px" }}
+            style={{ height: "3.5rem", marginRight: "1.5em" }}
           />
             Josh Padilla
           </Button>
+          </div>
           <Hidden smDown>
+          <div className={classes.navWrapper}>
           <Button
             href="/about"
-            className={classes.navigationAbout}
+            className={classes.navigationLinks}
             component="button"
             color="inherit"
             onClick={handleDrawerClose}
@@ -213,6 +205,7 @@ export default function Navbar() {
           >
             CONTACT ME
           </Button>
+          </div>
           </Hidden>
         </Toolbar>
       </AppBar>
