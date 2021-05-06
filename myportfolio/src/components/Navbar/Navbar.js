@@ -139,7 +139,7 @@ export default function Navbar() {
         <Toolbar
           style={{ background: "linear-gradient(to right, #19547b, #d7d2cc)" }}
         >
-            <div style={{width: "20rem"}}>
+            <div style={{width: "25rem"}}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
